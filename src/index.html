@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Search Your Meal</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav id="navbar">
+        <a href="#" id="logo-header">
+          <img
+            src="https://www.themealdb.com/images/logo-small.png"
+            alt="logo-MealDb"
+          />
+        </a>
+
+        <!-- Boton tipo hamburguesa -->
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="menu">
+          <li id="menu-items"><a href="#search" class="nav-link">Buscar</a></li>
+          <li id="menu-items">
+            <a href="#random" class="nav-link">Aleatorio</a>
+          </li>
+          <li id="menu-items">
+            <a href="#about" class="nav-link">Acerca de</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="centered-search">
+      <div class="header-search">
+        <input
+          type="text"
+          id="keyword"
+          class="header-title"
+          placeholder="Search your meal"
+        />
+      </div>
+    </div>
+
+    <div id="data" class="centered"></div>
+    <div class="container">
+      <div class="row text-center">
+        <h3>Feeling hungry?</h3>
+        <h5>Get a random meal by clicking below</h5>
+        <button class="button-primary" id="get_meal">Click Here!</button>
+      </div>
+      <div id="meal" class="row meal"></div>
+    </div>
+
+    <footer class="abajo">
+      <!-- Aquí irá el pie de página con enlaces a redes sociales -->
+      <div id="seccionfooters">
+        <div id="socialmedia">
+          <p>Síguenos en:</p>
+          <a
+            href="https://www.instagram.com/db_mealhustles/"
+            style="display: inline-block; width: 50px; height: 50px"
+          >
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/instagram-52-151106.png"
+              alt="Instagram"
+            />
+          </a>
+          <a
+            href="https://es-la.facebook.com/pg/TheMealsIb/photos/"
+            style="display: inline-block; width: 50px; height: 50px"
+          >
+            <img
+              src="https://images.vexels.com/media/users/3/137253/isolated/preview/90dd9f12fdd1eefb8c8976903944c026-icono-de-facebook-logo-by-vexels.png"
+              alt="Facebook"
+            />
+          </a>
+          <a
+            href="https://twitter.com/food_noms"
+            style="display: inline-block; width: 50px; height: 50px"
+          >
+            <img
+              style="width: 100%"
+              src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png"
+              alt="Twitter"
+            />
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=HAUCtt6YI3E"
+            style="display: inline-block; width: 50px; height: 50px"
+          >
+            <img
+              src="https://yt3.ggpht.com/ytc/AKedOLTeW16beH0Zky7fPhaWHC9pTm_rwNAUIUIPdMpOKQ=s900-c-k-c0x00ffffff-no-rj"
+              alt="YouTube"
+            />
+          </a>
+        </div>
+        <form class="seccionfooter">
+          <p>Ponte en contacto:</p>
+          <input
+            type="text"
+            id="correo"
+            name="fcorreo"
+            required
+            placeholder="Correo"
+            style="font-size: 20px"
+          />
+          <button type="submit">Enviar</button>
+        </form>
+        <p id="derechos">
+          © 2021 The Meal DB. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
