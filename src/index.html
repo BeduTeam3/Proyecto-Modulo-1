@@ -7,200 +7,204 @@
   </head>
 
   <body>
-    <header id="header">
-      <nav id="navbar">
-        <a href="https://www.themealdb.com" id="logo-header">
-          <img
-            src="https://www.themealdb.com/images/logo-small.png"
-            alt="logo-MealDb"
-          />
-        </a>
+    <div id="page-container">
+      <div id="content-wrap">
+        <header id="header">
+          <nav id="navbar">
+            <a href="https://www.themealdb.com" id="logo-header">
+              <img
+                src="https://www.themealdb.com/images/logo-small.png"
+                alt="logo-MealDb"
+              />
+            </a>
 
-        <!-- Boton tipo hamburguesa -->
-        <button class="nav-toggle" aria-label="Abrir menú">
-          <em class="fas fa-bars"></em>
-        </button>
+            <!-- Boton tipo hamburguesa -->
+            <button class="nav-toggle" aria-label="Abrir menú">
+              <em class="fas fa-bars"></em>
+            </button>
 
-        <ul class="menu">
-          <li id="menu-items">
-            <a href="#search" class="header-link">Buscar</a>
-          </li>
-          <li id="menu-items">
-            <a href="#random" class="header-link">Aleatorio</a>
-          </li>
-          <li id="menu-items">
-            <a href="#about" class="header-link">Acerca de</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+            <ul class="menu">
+              <li id="menu-items">
+                <a href="#search" class="header-link">Buscar</a>
+              </li>
+              <li id="menu-items">
+                <a href="#random" class="header-link">Aleatorio</a>
+              </li>
+              <li id="menu-items">
+                <a href="#about" class="header-link">Acerca de</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
 
-    <div class="centered-search">
-      <div class="header-search">
-        <div class="container mt-5 mb-5">
-          <div class="row text-center justify-content-center">
-            <h3>Feeling hungry?</h3>
-            <h5>Find your recipe</h5>
-            <div class="contenedor-input">
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  name="search"
-                  id="inputSearch"
-                  class="form-control rounded-pill me-3"
-                  placeholder="Search for a Meal..."
-                  style="border: solid 3px #d1461f"
-                  aria-label="Recipient's username"
-                  aria-describedby="button-addon2"
-                />
-                <button
-                  type="submit"
-                  class="btn rounded-pill w-15 text-white"
-                  style="background-color: #d1461f"
-                  id="get_meal_search"
-                >
-                  Search!
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carrusel -->
-        <section class="container">
-          <div class="row search">
-            <!-- Imagen de comida principal -->
-            <div class="col-6 text-center">
-              <figure class="figure" id="figureSearch">
-                <!-- Aqui van la imagen de la comida principal -->
-              </figure>
-            </div>
-
-            <!-- Carrusel de los ingredientes -->
-            <div class="col-6 text-center">
-              <h2 id="tituloIngredientesSearch"></h2>
-              <div
-                id="carouselExampleCaptionsSearch"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div
-                  class="carousel-inner"
-                  id="searchCarousel"
-                  style="background-color: gray"
-                >
-                  <!-- Aqui van las imagenes y los ingredientes de la comida -->
+        <div class="centered-search">
+          <div class="header-search">
+            <div class="container mt-5 mb-5">
+              <div class="row text-center justify-content-center">
+                <h3>Feeling hungry?</h3>
+                <h5>Find your recipe</h5>
+                <div class="contenedor-input">
+                  <div class="input-group mb-3">
+                    <input
+                      type="text"
+                      name="search"
+                      id="inputSearch"
+                      class="form-control rounded-pill me-3"
+                      placeholder="Search for a Meal..."
+                      style="border: solid 3px #d1461f"
+                      aria-label="Recipient's username"
+                      aria-describedby="button-addon2"
+                    />
+                    <button
+                      type="submit"
+                      class="btn rounded-pill w-15 text-white"
+                      style="background-color: #d1461f"
+                      id="get_meal_search"
+                    >
+                      Search!
+                    </button>
+                  </div>
                 </div>
-                <button
-                  class="carousel-control-prev"
-                  id="carousel-control-prev-search"
-                  type="button"
-                  data-bs-target="#carouselExampleCaptionsSearch"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  id="carousel-control-next-search"
-                  type="button"
-                  data-bs-target="#carouselExampleCaptionsSearch"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
             </div>
-          </div>
-        </section>
 
-        <!-- Istrucciones y video -->
+            <!-- Carrusel -->
+            <section class="container">
+              <div class="row search">
+                <!-- Imagen de comida principal -->
+                <div class="col-6 text-center">
+                  <figure class="figure" id="figureSearch">
+                    <!-- Aqui van la imagen de la comida principal -->
+                  </figure>
+                </div>
+
+                <!-- Carrusel de los ingredientes -->
+                <div class="col-6 text-center">
+                  <h2 id="tituloIngredientesSearch"></h2>
+                  <div
+                    id="carouselExampleCaptionsSearch"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div
+                      class="carousel-inner"
+                      id="searchCarousel"
+                      style="background-color: gray"
+                    >
+                      <!-- Aqui van las imagenes y los ingredientes de la comida -->
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      id="carousel-control-prev-search"
+                      type="button"
+                      data-bs-target="#carouselExampleCaptionsSearch"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      id="carousel-control-next-search"
+                      type="button"
+                      data-bs-target="#carouselExampleCaptionsSearch"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Istrucciones y video -->
+            <div class="container">
+              <div class="row">
+                <div class="col-6 mb-3 text-center" id="videoSearch">
+                  <!-- Elementops para el video -->
+                </div>
+                <div class="col-6 mb-3 text-center" id="instruccionesSearch">
+                  <!-- Elementos para las instrucciones -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Muestra las comidas dado el buscador -->
+            <section class="container">
+              <div class="row" id="muestraSearch"></div>
+            </section>
+          </div>
+        </div>
+
+        <div id="data" class="centered"></div>
         <div class="container">
-          <div class="row">
-            <div class="col-6 mb-3 text-center" id="videoSearch">
-              <!-- Elementops para el video -->
-            </div>
-            <div class="col-6 mb-3 text-center" id="instruccionesSearch">
-              <!-- Elementos para las instrucciones -->
-            </div>
+          <div class="row text-center">
+            <h3>Feeling hungry?</h3>
+            <h5>Get a random meal by clicking below</h5>
+            <button class="button-primary" id="get_meal">Click Here!</button>
           </div>
+          <div id="meal" class="row meal"></div>
         </div>
-
-        <!-- Muestra las comidas dado el buscador -->
-        <section class="container">
-          <div class="row" id="muestraSearch"></div>
-        </section>
       </div>
+      <footer class="footer">
+        <!-- Aquí irá el pie de página con enlaces a redes sociales -->
+        <div id="seccionfooters">
+          <div class="repository">
+            <a
+              href="https://github.com/BeduTeam3/Proyecto-Modulo-2"
+              class="main-repo"
+              target="blank"
+            >
+              Repositorio del proyecto
+            </a>
+          </div>
+          <div class="team">
+            <h6>Fase 2 - Equipo #3</h6>
+            <p>
+              Erick Carranza Meza |
+              <a href="https://github.com/ErickCM14">ErickCM14</a>
+            </p>
+            <p>
+              Hiram Chávez López |
+              <a href="https://github.com/JustLearningMX">JustLearningMX</a>
+            </p>
+            <p>
+              Justine Delgado |
+              <a href="https://github.com/JustStewartt">JustStewartt</a>
+            </p>
+            <p>
+              David Rivera Orozco |
+              <a href="https://github.com/davriv">davriv</a>
+            </p>
+            <p>
+              Jesus Salvador Uribe |
+              <a href="https://github.com/mnchava">mnchava</a>
+            </p>
+          </div>
+          <form class="seccionfooter">
+            <p>Ponte en contacto:</p>
+            <input
+              type="text"
+              id="correo"
+              name="fcorreo"
+              required
+              placeholder="Correo"
+              style="font-size: 20px"
+            />
+            <button type="submit" class="btn rounded-pill w-15">Enviar</button>
+          </form>
+        </div>
+      </footer>
+
+      <script src="js/index.js"></script>
+      <script src="js/menu.js"></script>
     </div>
-
-    <div id="data" class="centered"></div>
-    <div class="container">
-      <div class="row text-center">
-        <h3>Feeling hungry?</h3>
-        <h5>Get a random meal by clicking below</h5>
-        <button class="button-primary" id="get_meal">Click Here!</button>
-      </div>
-      <div id="meal" class="row meal"></div>
-    </div>
-
-    <footer class="abajo">
-      <!-- Aquí irá el pie de página con enlaces a redes sociales -->
-      <div id="seccionfooters">
-        <div class="repository">
-          <a
-            href="https://github.com/BeduTeam3/Proyecto-Modulo-2"
-            class="main-repo"
-            target="blank"
-          >
-            Repositorio del proyecto
-          </a>
-        </div>
-        <div class="team">
-          <h6>Fase 2 - Equipo #3</h6>
-          <p>
-            Erick Carranza Meza |
-            <a href="https://github.com/ErickCM14">ErickCM14</a>
-          </p>
-          <p>
-            Hiram Chávez López |
-            <a href="https://github.com/JustLearningMX">JustLearningMX</a>
-          </p>
-          <p>
-            Justine Delgado |
-            <a href="https://github.com/JustStewartt">JustStewartt</a>
-          </p>
-          <p>
-            David Rivera Orozco | <a href="https://github.com/davriv">davriv</a>
-          </p>
-          <p>
-            Jesus Salvador Uribe |
-            <a href="https://github.com/mnchava">mnchava</a>
-          </p>
-        </div>
-        <form class="seccionfooter">
-          <p>Ponte en contacto:</p>
-          <input
-            type="text"
-            id="correo"
-            name="fcorreo"
-            required
-            placeholder="Correo"
-            style="font-size: 20px"
-          />
-          <button type="submit" class="btn rounded-pill w-15">Enviar</button>
-        </form>
-      </div>
-    </footer>
-
-    <script src="js/index.js"></script>
-    <script src="js/menu.js"></script>
   </body>
 </html>

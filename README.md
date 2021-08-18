@@ -7,7 +7,11 @@ Fase 2 - Equipo #3
 - David Rivera Orozco | [davriv](https://github.com/davriv)
 - Jesus Salvador Uribe | [mnchava](https://github.com/mnchava)
 
-## [Postwork de la sesión 8](https://github.com/beduExpert/Programacion-JavaScript-Santander-2021/tree/main/Sesion-08/Postwork)
+## [Postwork de la sesión 12](https://github.com/beduExpert/Programacion-JavaScript-Santander-2021/tree/main/Sesion-12/Postwork)
+
+#
+## Nuestro proyecto esta corriendo [aquí](https://condescending-mestorf-caf445.netlify.app/), usando [Netlify](https://app.netlify.com/)
+# 
 
 ### Objetivos
 Configurar un ambiente de desarrollo para una aplicación nueva
