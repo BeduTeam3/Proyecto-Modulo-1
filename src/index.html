@@ -41,76 +41,100 @@
             <h5>Find your recipe</h5>
             <div class="contenedor-input">
               <div class="input-group mb-3">
-                <input type="text" name="search" id="inputSearch"
-                  class="form-control  rounded-pill me-3" placeholder="Search for a Meal..." style="border:solid 3px #d1461f;"
-                  aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button type="submit" class="btn rounded-pill w-15 text-white" style="background-color: #d1461f;"
-                  id="get_meal_search">Search!</button>
+                <input
+                  type="text"
+                  name="search"
+                  id="inputSearch"
+                  class="form-control rounded-pill me-3"
+                  placeholder="Search for a Meal..."
+                  style="border: solid 3px #d1461f"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  type="submit"
+                  class="btn rounded-pill w-15 text-white"
+                  style="background-color: #d1461f"
+                  id="get_meal_search"
+                >
+                  Search!
+                </button>
               </div>
             </div>
           </div>
         </div>
-      
+
         <!-- Carrusel -->
         <section class="container">
           <div class="row search">
-      
             <!-- Imagen de comida principal -->
             <div class="col-6 text-center">
               <figure class="figure" id="figureSearch">
-      
                 <!-- Aqui van la imagen de la comida principal -->
-      
               </figure>
             </div>
-      
+
             <!-- Carrusel de los ingredientes -->
             <div class="col-6 text-center">
               <h2 id="tituloIngredientesSearch"></h2>
-              <div id="carouselExampleCaptionsSearch" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner" id="searchCarousel" style="background-color: gray;">
-      
+              <div
+                id="carouselExampleCaptionsSearch"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div
+                  class="carousel-inner"
+                  id="searchCarousel"
+                  style="background-color: gray"
+                >
                   <!-- Aqui van las imagenes y los ingredientes de la comida -->
-      
                 </div>
-                <button class="carousel-control-prev" id="carousel-control-prev-search" type="button"
-                  data-bs-target="#carouselExampleCaptionsSearch" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <button
+                  class="carousel-control-prev"
+                  id="carousel-control-prev-search"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptionsSearch"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" id="carousel-control-next-search" type="button"
-                  data-bs-target="#carouselExampleCaptionsSearch" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <button
+                  class="carousel-control-next"
+                  id="carousel-control-next-search"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptionsSearch"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
             </div>
-      
           </div>
         </section>
-      
+
         <!-- Istrucciones y video -->
         <div class="container">
           <div class="row">
             <div class="col-6 mb-3 text-center" id="videoSearch">
-      
               <!-- Elementops para el video -->
-              
             </div>
             <div class="col-6 mb-3 text-center" id="instruccionesSearch">
-              
               <!-- Elementos para las instrucciones -->
-      
             </div>
           </div>
         </div>
-      
-      
+
         <!-- Muestra las comidas dado el buscador -->
         <section class="container">
-          <div class="row" id="muestraSearch">
-      
-          </div>
+          <div class="row" id="muestraSearch"></div>
         </section>
       </div>
     </div>
@@ -128,36 +152,43 @@
     <footer class="abajo">
       <!-- Aquí irá el pie de página con enlaces a redes sociales -->
       <div id="seccionfooters">
-        <div id="socialmedia">
-          <p>Síguenos en:</p>
-          <a href="https://www.instagram.com/db_mealhustles/">
+        <div class="repository">
+          <a
+            href="https://github.com/BeduTeam3/Proyecto-Modulo-2"
+            class="main-repo"
+            target="blank"
+          >
             <img
-              src="https://images.vexels.com/media/users/3/137380/isolated/lists/1b2ca367caa7eff8b45c09ec09b44c16-logotipo-de-icono-de-instagram.png"
-              alt="Instagram"
+              src="https://cdn.iconscout.com/icon/free/png-256/github-163-761603.png"
+              alt="GitHub"
             />
-          </a>
-          <a href="https://es-la.facebook.com/pg/TheMealsIb/photos/">
-            <img
-              src="https://images.vexels.com/media/users/3/137253/isolated/preview/90dd9f12fdd1eefb8c8976903944c026-icono-de-facebook-logo-by-vexels.png"
-              alt="Facebook"
-            />
-          </a>
-          <a href="https://twitter.com/food_noms">
-            <img
-              style="width: 100%"
-              src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png"
-              alt="Twitter"
-            />
-          </a>
-          <a href="https://www.youtube.com/watch?v=HAUCtt6YI3E">
-            <img
-              src="https://images.vexels.com/media/users/3/137425/isolated/lists/f2ea1ded4d037633f687ee389a571086-logotipo-del-icono-de-youtube.png"
-              alt="YouTube"
-            />
+            Repositorio del proyecto
           </a>
         </div>
+        <div class="team">
+          <h6>Fase 2 - Equipo #3</h6>
+          <p>
+            Erick Carranza Meza |
+            <a href="https://github.com/ErickCM14">ErickCM14</a>
+          </p>
+          <p>
+            Hiram Chávez López |
+            <a href="https://github.com/JustLearningMX">JustLearningMX</a>
+          </p>
+          <p>
+            Justine Delgado |
+            <a href="https://github.com/JustStewartt">JustStewartt</a>
+          </p>
+          <p>
+            David Rivera Orozco | <a href="https://github.com/davriv">davriv</a>
+          </p>
+          <p>
+            Jesus Salvador Uribe |
+            <a href="https://github.com/mnchava">mnchava</a>
+          </p>
+        </div>
         <form class="seccionfooter">
-          Ponte en contacto:
+          <p>Ponte en contacto:</p>
           <input
             type="text"
             id="correo"
@@ -166,11 +197,8 @@
             placeholder="Correo"
             style="font-size: 20px"
           />
-          <p>
-            <button id="contacto" type="submit">Enviar</button>
-          </p>
+          <button id="contacto" type="submit">Enviar</button>
         </form>
-        <p id="derechos">© 2021 The Meal DB. All Rights Reserved.</p>
       </div>
     </footer>
 

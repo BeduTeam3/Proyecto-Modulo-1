@@ -104,8 +104,6 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: url("https://www.themealdb.com/images/logo-small.png") no-repeat
-  center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -241,27 +239,47 @@ li {
 
 #seccionfooters {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   background-color: #be3144;
-  padding-bottom: 20px;
-  font-family: "Times New Roman", Times, serif;
   color: white;
   font-size: 20px;
+  padding: 20px;
 }
 
-#socialmedia {
-  padding-left: 10px;
+.repository {
+  justify-content: center;
+  align-content: center;
 }
 
-#socialmedia > a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
+.repository > a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-#derechos {
-  display: flex;
+.repository > a > img {
+  justify-self: center;
+  height: 50px;
+  width: 50px;
+}
+
+.team {
   font-size: 12px;
+  text-align: center;
+}
+
+.team > h6 {
+  font-size: 16px;
+}
+
+.team p a {
+  color: white;
+}
+
+.seccionfooter {
+  justify-self: end;
+  align-self: center;
 }
 
 .seccionfooter > p {
@@ -269,15 +287,16 @@ li {
 }
 
 .seccionfooter > button {
+  margin: 5px 10px;
   background-color: #020a57;
   color: white;
   border-radius: 10px;
-  padding: 15px;
-  font-size: 20px;
+  padding: 8px;
+  font-size: 14px;
 }
 
 #correo {
-  width: 80px;
+  width: 180px;
 }
 
 @media (min-width: 768px) {
@@ -322,15 +341,5 @@ li {
   .nav-toggle {
     /*Oculta menú hamburguesa*/
     display: none;
-  }
-  
-  #socialmedia {
-    padding-left: 20px;
-  }
-
-  #socialmedia > a {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
   }
 }

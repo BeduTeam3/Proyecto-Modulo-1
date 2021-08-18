@@ -1,5 +1,7 @@
 
 import css from "../css/styles.css";
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const get_meal_btn = document.getElementById('get_meal');
 const meal_container = document.getElementById('meal');
