@@ -9,7 +9,7 @@
   <body>
     <header id="header">
       <nav id="navbar">
-        <a href="#" id="logo-header">
+        <a href="https://www.themealdb.com" id="logo-header">
           <img
             src="https://www.themealdb.com/images/logo-small.png"
             alt="logo-MealDb"
@@ -22,12 +22,14 @@
         </button>
 
         <ul class="menu">
-          <li id="menu-items"><a href="#search" class="nav-link">Buscar</a></li>
           <li id="menu-items">
-            <a href="#random" class="nav-link">Aleatorio</a>
+            <a href="#search" class="header-link">Buscar</a>
           </li>
           <li id="menu-items">
-            <a href="#about" class="nav-link">Acerca de</a>
+            <a href="#random" class="header-link">Aleatorio</a>
+          </li>
+          <li id="menu-items">
+            <a href="#about" class="header-link">Acerca de</a>
           </li>
         </ul>
       </nav>
@@ -158,10 +160,6 @@
             class="main-repo"
             target="blank"
           >
-            <img
-              src="https://cdn.iconscout.com/icon/free/png-256/github-163-761603.png"
-              alt="GitHub"
-            />
             Repositorio del proyecto
           </a>
         </div>
@@ -197,7 +195,7 @@
             placeholder="Correo"
             style="font-size: 20px"
           />
-          <button id="contacto" type="submit">Enviar</button>
+          <button type="submit" class="btn rounded-pill w-15">Enviar</button>
         </form>
       </div>
     </footer>
