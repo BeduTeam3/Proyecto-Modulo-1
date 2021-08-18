@@ -88,50 +88,6 @@ html {
   left: 0;
 }
 
-@media (min-width: 768px) {
-  /*Si la pantalla es mayor a 768*/
-  .menu {
-    /*Opciones del menú*/
-    flex-direction: row;
-    position: relative;
-    background-color: #be3144;
-    top: 0px; /*De acuerdo al alto del elemento anterior*/
-    left: 0px; /*Opciones de menú fuera de pantalla*/
-    transition: none;
-    width: max-content; /*Que ocupe todo el ancho*/
-    height: 60px;
-    padding: 0; /*padding 0 elimina padding por defecto del navegador*/
-    overflow-y: hidden; /*Agrega scroll x si la pantalla supera el contenido*/
-  }
-
-  #menu-items {
-    padding: 20px;
-    line-height: 60px;
-    margin: 0;
-  }
-
-  .nav-link {
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 5px 10px;
-  }
-
-  #navbar #menu-items:hover {
-    background-color: rgba(69, 86, 125, 0.7);
-    transition: 0.3s;
-  }
-
-  .nav-link:hover,
-  .nav-link_active {
-    color: white;
-    transition: none;
-  }
-
-  .nav-toggle {
-    /*Oculta menú hamburguesa*/
-    display: none;
-  }
-}
 
 h1 {
   color: purple;
@@ -149,7 +105,7 @@ html {
   align-items: center;
   text-align: center;
   background: url("https://www.themealdb.com/images/logo-small.png") no-repeat
-    center center;
+  center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -208,7 +164,7 @@ html {
   clear: both;
 }
 
-input[type="text"] {
+#keyword {
   width: 500px;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -271,6 +227,8 @@ li {
   height: 100%;
 }
 
+/* Footer */
+
 .abajo {
   background-color: #be3144;
   position: absolute;
@@ -278,7 +236,7 @@ li {
   width: 100%;
   height: 120px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
 }
 
 #seccionfooters {
@@ -288,8 +246,22 @@ li {
   padding-bottom: 20px;
   font-family: "Times New Roman", Times, serif;
   color: white;
-  height: 120px;
   font-size: 20px;
+}
+
+#socialmedia {
+  padding-left: 10px;
+}
+
+#socialmedia > a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+#derechos {
+  display: flex;
+  font-size: 12px;
 }
 
 .seccionfooter > p {
@@ -300,19 +272,65 @@ li {
   background-color: #020a57;
   color: white;
   border-radius: 10px;
-  padding: 5px;
+  padding: 15px;
   font-size: 20px;
 }
 
-#socialmedia > img {
-  width: 70%;
-}
-
-#derechos {
-  display: flex;
-  font-size: 12px;
-}
-
 #correo {
-  width: 100%;
+  width: 80px;
+}
+
+@media (min-width: 768px) {
+  /*Si la pantalla es mayor a 768*/
+  .menu {
+    /*Opciones del menú*/
+    flex-direction: row;
+    position: relative;
+    background-color: #be3144;
+    top: 0px; /*De acuerdo al alto del elemento anterior*/
+    left: 0px; /*Opciones de menú fuera de pantalla*/
+    transition: none;
+    width: max-content; /*Que ocupe todo el ancho*/
+    height: 60px;
+    padding: 0; /*padding 0 elimina padding por defecto del navegador*/
+    overflow-y: hidden; /*Agrega scroll x si la pantalla supera el contenido*/
+  }
+
+  #menu-items {
+    padding: 20px;
+    line-height: 60px;
+    margin: 0;
+  }
+
+  .nav-link {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+  }
+
+  #navbar #menu-items:hover {
+    background-color: rgba(69, 86, 125, 0.7);
+    transition: 0.3s;
+  }
+
+  .nav-link:hover,
+  .nav-link_active {
+    color: white;
+    transition: none;
+  }
+
+  .nav-toggle {
+    /*Oculta menú hamburguesa*/
+    display: none;
+  }
+  
+  #socialmedia {
+    padding-left: 20px;
+  }
+
+  #socialmedia > a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
 }
