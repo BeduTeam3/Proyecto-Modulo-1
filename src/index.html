@@ -35,12 +35,83 @@
 
     <div class="centered-search">
       <div class="header-search">
-        <input
-          type="text"
-          id="keyword"
-          class="header-title"
-          placeholder="Search your meal"
-        />
+        <div class="container mt-5 mb-5">
+          <div class="row text-center justify-content-center">
+            <h3>Feeling hungry?</h3>
+            <h5>Find your recipe</h5>
+            <div class="contenedor-input">
+              <div class="input-group mb-3">
+                <input type="text" name="search" id="inputSearch"
+                  class="form-control  rounded-pill me-3" placeholder="Search for a Meal..." style="border:solid 3px #d1461f;"
+                  aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button type="submit" class="btn rounded-pill w-15 text-white" style="background-color: #d1461f;"
+                  id="get_meal_search">Search!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Carrusel -->
+        <section class="container">
+          <div class="row search">
+      
+            <!-- Imagen de comida principal -->
+            <div class="col-6 text-center">
+              <figure class="figure" id="figureSearch">
+      
+                <!-- Aqui van la imagen de la comida principal -->
+      
+              </figure>
+            </div>
+      
+            <!-- Carrusel de los ingredientes -->
+            <div class="col-6 text-center">
+              <h2 id="tituloIngredientesSearch"></h2>
+              <div id="carouselExampleCaptionsSearch" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="searchCarousel" style="background-color: gray;">
+      
+                  <!-- Aqui van las imagenes y los ingredientes de la comida -->
+      
+                </div>
+                <button class="carousel-control-prev" id="carousel-control-prev-search" type="button"
+                  data-bs-target="#carouselExampleCaptionsSearch" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" id="carousel-control-next-search" type="button"
+                  data-bs-target="#carouselExampleCaptionsSearch" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+      
+          </div>
+        </section>
+      
+        <!-- Istrucciones y video -->
+        <div class="container">
+          <div class="row">
+            <div class="col-6 mb-3 text-center" id="videoSearch">
+      
+              <!-- Elementops para el video -->
+              
+            </div>
+            <div class="col-6 mb-3 text-center" id="instruccionesSearch">
+              
+              <!-- Elementos para las instrucciones -->
+      
+            </div>
+          </div>
+        </div>
+      
+      
+        <!-- Muestra las comidas dado el buscador -->
+        <section class="container">
+          <div class="row" id="muestraSearch">
+      
+          </div>
+        </section>
       </div>
     </div>
 
