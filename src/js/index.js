@@ -183,7 +183,6 @@ function mostrarMeal(id) {
 
 const createMealSearch = meal => {
   const ingredients = [];
-  console.log(cImg, "eeieieieiei");
   if (cImg > 1) {
       while (carouselSearch.firstChild) {
           carouselSearch.removeChild(carouselSearch.firstChild)
@@ -233,7 +232,6 @@ const createMealSearch = meal => {
   h2.textContent = meal.strMeal;
   figureSearch.appendChild(h2);
   figureSearch.appendChild(imgMealSearch);
-  console.log(figureSearch);
 
   //Nodos para el video
   let h3Video = document.createElement('h3');
@@ -242,8 +240,8 @@ const createMealSearch = meal => {
   divVideo.className = "w-100 d-flex justify-content-center";
   let iframeVideo = document.createElement('iframe');
   iframeVideo.src = `https://www.youtube.com/embed/${meal.strYoutube.slice(-11)}`;
-  iframeVideo.width = "500px";
-  iframeVideo.height = "300px";
+  iframeVideo.width = "30%";
+  iframeVideo.height = "25%";
   iframeVideo.allowFullscreen;
   videoSearch.appendChild(h3Video);
   videoSearch.appendChild(iframeVideo);
